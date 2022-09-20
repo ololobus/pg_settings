@@ -20,5 +20,7 @@ bundle install --path ./vendor
 ### Usage
 
 ```shell
-bundle exec ruby ./get_pg_settings.rb --path './postgres_settings.json' --database-url 'postgres://@/postgres'
+bundle exec ruby ./get_pg_settings.rb \
+    --path './postgres_settings.json' \
+    --database-url 'postgres://@/postgres'
 ```
