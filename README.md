@@ -19,6 +19,8 @@ bundle install --path ./vendor
 
 ### Usage
 
+NB: you have to be logged in as superuser to see all available settings.
+
 ```shell
 bundle exec ruby ./get_pg_settings.rb \
     --path './postgres_settings.json' \
