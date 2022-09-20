@@ -49,7 +49,7 @@ puts "Connecting to #{options[:database_url]}"
 conn = PG::Connection.new(options[:database_url])
 settings = conn.exec(query).to_a
 
-settings.map! do |op|
+settings.sort_by!{ |op| op['name'] }.map! do |op|
   if op['enumvals']
     op['enumvals'] = op['enumvals'][1..-2] # trim `{` and `}`
                       .split(',')
