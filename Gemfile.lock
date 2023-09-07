@@ -4,6 +4,7 @@ GEM
     pg (1.4.3)
 
 PLATFORMS
+  arm64-darwin-22
   x86_64-linux
 
 DEPENDENCIES
